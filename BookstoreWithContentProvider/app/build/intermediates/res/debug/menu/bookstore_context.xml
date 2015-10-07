@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/info"
+        android:title="@string/m_info"
+        android:icon="@drawable/ic_menu_icon2"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/del"
+        android:icon="@drawable/ic_menu_delete"
+        android:title="@string/m_del"/>
+</menu><!-- From: file:/C:/Users/Sandeep/Desktop/Android%20projects/BookstoreWithContentProvider/app/src/main/res/menu/bookstore_context.xml -->

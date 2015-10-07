@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Sandeep/Desktop/Android%20projects/BookstoreWithEntityManager/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Curr">$ </string>
+    <string name="Msg_added">Book Added</string>
+    <string name="Msg_cancel">Action cancelled. </string>
+    <string name="Msg_del">Book removed</string>
+    <string name="Msg_thanks">Thank you for your patronage. Your %d item(s) will be dispatched soon. </string>
+    <string name="Msg_thanks2"> </string>
+    <string name="action_settings">settings</string>
+    <string name="add">Add</string>
+    <string name="app_name">Book Store</string>
+    <string name="cancel">Cancel</string>
+    <string name="checkout">Checkout</string>
+    <string name="delete">Delete</string>
+    <string name="empty_cart">THE CART IS EMPTY!</string>
+    <string name="log_insert">Insertion failed. Please try again </string>
+    <string name="log_modeErr">Wrong DB mode selected. </string>
+    <string name="log_upg">Upgrading from version %%d to %%d. </string>
+    <string name="log_write">Writing to disk failed. </string>
+    <string name="m_del">Delete</string>
+    <string name="m_info">Info</string>
+    <string name="order">Finalize</string>
+    <string name="select">Item(s) selected.</string>
+    <string name="thanks"> Thanks </string>
+</resources>

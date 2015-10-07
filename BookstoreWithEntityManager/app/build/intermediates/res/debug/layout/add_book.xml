@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Title:" />
+	<EditText android:id="@+id/search_title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="" />
+			
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Author:" />
+	<EditText android:id="@+id/search_author"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="" />		
+	
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="ISBN:" />
+	<EditText android:id="@+id/search_isbn"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="" />
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right"
+        android:weightSum="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cancel"
+            android:layout_gravity="right"
+            android:layout_weight="0.21" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/search"
+            android:layout_weight="0.21" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/add"
+            android:layout_weight="0.25" />
+
+        </TableRow>
+</LinearLayout><!-- From: file:/C:/Users/Sandeep/Desktop/Android%20projects/BookstoreWithEntityManager/app/src/main/res/layout/add_book.xml -->

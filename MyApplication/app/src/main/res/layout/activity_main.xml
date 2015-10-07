@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText android:id="@+id/edit_message"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name" />
+    <EditText android:id="@+id/edit_url"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:autoText="@string/url"
+        android:text="@string/url" />
+    <EditText android:id="@+id/alarm"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:autoText="@string/alarm"
+        android:text="@string/alarmdef" />
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_label"
+        android:onClick="sendMessage" />
+</LinearLayout>

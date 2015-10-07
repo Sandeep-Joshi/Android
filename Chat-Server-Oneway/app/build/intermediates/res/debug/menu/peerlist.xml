@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/info"
+        android:showAsAction="ifRoom"
+        android:title="Info"/>
+
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="ifRoom"
+        android:title="Messages"/>
+
+    <item
+        android:id="@+id/cancel"
+        android:showAsAction="ifRoom"
+        android:title="Cancel"/>
+</menu><!-- From: file:/C:/Users/Sandeep/Desktop/Android%20projects/Chat-Server-Oneway/app/src/main/res/menu/peerlist.xml -->

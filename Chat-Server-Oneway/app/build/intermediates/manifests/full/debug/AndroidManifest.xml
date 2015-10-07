@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.stevens.cs522.chat.oneway"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WIFI" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="edu.stevens.cs522.chat.oneway.server.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.stevens.cs522.chat.oneway.server.ChatApp"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="edu.stevens.cs522.chat.oneway.server.ChatServer"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="edu.stevens.cs522.chat.oneway.server.MessageList"
+            android:label="@string/message_list" >
+        </activity>
+        <activity
+            android:name="edu.stevens.cs522.chat.oneway.server.PeerInfo"
+            android:label="@string/title_activity_peer_info" >
+        </activity>
+        <activity
+            android:name="edu.stevens.cs522.chat.oneway.server.PeerList"
+            android:label="@string/title_activity_peer_list" >
+        </activity>
+
+        <provider
+            android:name="edu.stevens.cs522.chat.oneway.server.provider.chatProvider"
+            android:authorities="edu.stevens.cs522.chatapp" >
+        </provider>
+
+        <service
+            android:name="edu.stevens.cs522.chat.oneway.server.ChatReceiverService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="edu.stevens.cs522.chat.oneway.server.ChatSenderService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="edu.stevens.cs522.chat.oneway.server.ChatApp$Receiver" >
+            <intent-filter>
+                <action android:name="android.action.intent.PROVIDER_CHANGED" >
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

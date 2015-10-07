@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+ 
+     <TextView android:id="@+id/cart_row_title"
+         android:textSize="24sp"
+         android:textStyle="bold"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:gravity="center_horizontal|top"
+         android:text="Book Title"/>
+ 
+     <TextView android:id="@+id/cart_row_author"
+         android:textSize="20sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/cart_row_title"
+         android:ellipsize="marquee"
+         android:gravity="right"
+         android:textStyle="italic"/>
+
+    <TextView android:id="@+id/cart_row_isbn"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ISBN"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:layout_below="@+id/cart_row_author"/>
+
+    <TextView android:id="@+id/cart_row_price"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/cart_row_isbn"
+        android:layout_below="@+id/cart_row_author"
+        android:layout_alignParentRight="true"/>
+ </RelativeLayout >
+
+<!-- From: file:/C:/Users/Sandeep/Desktop/Android%20projects/BookstoreWithEntityManager/app/src/main/res/layout/cart_row.xml -->

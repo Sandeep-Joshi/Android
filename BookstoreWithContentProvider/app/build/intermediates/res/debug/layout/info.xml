@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+    android:focusable="false"
+    android:longClickable="true">
+ 
+     <TextView android:id="@+id/info_title"
+         android:textSize="40dp"
+         android:textStyle="bold"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:gravity="center_horizontal|top"
+         android:text="Book Title"
+         android:theme="@android:style/Animation"
+         android:background="@drawable/ic_menu_icon2" />
+ 
+     <TextView android:id="@+id/info_author"
+         android:textSize="25sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Author"
+         android:layout_below="@+id/info_title"
+         android:ellipsize="marquee"
+         android:gravity="right"
+         android:textStyle="italic"
+         android:layout_marginTop="60dp" />
+
+    <TextView android:id="@+id/info_isbn"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ISBN"
+        android:layout_alignParentLeft="false"
+        android:gravity="right"
+        android:layout_below="@+id/info_author"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView android:id="@+id/info_price"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:gravity="right"
+        android:layout_below="@+id/info_isbn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout >
+<!-- 
+<TextView android:id="@+id/cart_row_text"
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    -->
+<!-- From: file:/C:/Users/Sandeep/Desktop/Android%20projects/BookstoreWithContentProvider/app/src/main/res/layout/info.xml -->

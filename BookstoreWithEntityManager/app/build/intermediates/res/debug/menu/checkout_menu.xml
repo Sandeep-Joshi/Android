@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- Menu for the main BookStore activity. -->
+
+    <item
+        android:id="@+id/order"
+        android:icon="@drawable/ic_menu_tick"
+        android:showAsAction="ifRoom"
+        android:title="@string/order"/>
+    <item
+        android:id="@+id/cancel"
+        android:icon="@drawable/ic_menu_cancel2"
+        android:showAsAction="ifRoom"
+        android:title="@string/cancel"/>
+
+</menu><!-- From: file:/C:/Users/Sandeep/Desktop/Android%20projects/BookstoreWithEntityManager/app/src/main/res/menu/checkout_menu.xml -->
